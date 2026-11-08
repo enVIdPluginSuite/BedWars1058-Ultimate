@@ -1,9 +1,9 @@
 package dev.etran.ultimate.core
 
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.Items
-import dev.bw1058.ultimate.compat.Materials
-import dev.bw1058.ultimate.compat.Reflect
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.Items
+import dev.etran.ultimate.compat.Materials
+import dev.etran.ultimate.compat.Reflect
 import org.bukkit.Material
 import org.bukkit.enchantments.Enchantment
 import org.bukkit.inventory.ItemFlag

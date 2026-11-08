@@ -1,11 +1,11 @@
 package dev.etran.ultimate.ultimate
 
 import com.andrei1058.bedwars.api.arena.IArena
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.Particles
-import dev.bw1058.ultimate.compat.PlayerCompat
-import dev.bw1058.ultimate.compat.Sounds
-import dev.bw1058.ultimate.core.Text
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.Particles
+import dev.etran.ultimate.compat.PlayerCompat
+import dev.etran.ultimate.compat.Sounds
+import dev.etran.ultimate.core.Text
 import org.bukkit.Location
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler

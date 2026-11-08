@@ -35,9 +35,9 @@ the server's own requirement, the plugin itself is compiled for Java 8 bytecode)
 - Kotlin **2.2.21**, Gradle (wrapper included), Java 8 bytecode (`-Xjdk-release=8`, so only Java 8 APIs can be used).
 - Compiled against the **Spigot 1.8.8 API**: anything that compiles exists on 1.8. Newer-only features go through
   `compat/` (reflection, fails soft).
-- The Kotlin runtime is shaded **and relocated** to `dev.bw1058.ultimate.libs.kotlin`, so it can't clash with the
+- The Kotlin runtime is shaded **and relocated** to `dev.etran.ultimate.libs.kotlin`, so it can't clash with the
   other Kotlin plugins in your series.
-- `libs/bedwars-plugin-23.3.jar` is the BedWars1058 API used at compile time (taken from the project you supplied).
+- `libs/bedwars-api-24.9.jar` is the BedWars1058 API used at compile time (taken from the project you supplied).
 
 ## The ultimates
 
@@ -98,14 +98,14 @@ a newer version of the plugin added to your files.
 | Command | Permission |
 |---|---|
 | `/bwu list`, `/bwu info <ultimate>` | none |
-| `/bwu menu`, `/bwu select <ultimate>` | `bw1058ultimate.use` (default: everyone) |
-| `/bwu reload`, `/bwu refresh` | `bw1058ultimate.reload` |
-| `/bwu config …`, `/bwu enable\|disable <ultimate>` | `bw1058ultimate.config` |
-| `/bwu give <player> <ultimate>`, `/bwu clear <player>` | `bw1058ultimate.give` |
-| `/bwu status` | `bw1058ultimate.admin` |
+| `/bwu menu`, `/bwu select <ultimate>` | `etranultimate.use` (default: everyone) |
+| `/bwu reload`, `/bwu refresh` | `etranultimate.reload` |
+| `/bwu config …`, `/bwu enable\|disable <ultimate>` | `etranultimate.config` |
+| `/bwu give <player> <ultimate>`, `/bwu clear <player>` | `etranultimate.give` |
+| `/bwu status` | `etranultimate.admin` |
 
-`bw1058ultimate.admin` includes all of the above (default: op). With `selection.permission-per-ultimate: true`,
-picking needs `bw1058ultimate.use.<ultimate>` (or `.use.*`). Aliases: `/bwu`, `/ultimates`, `/bwultimate`.
+`etranultimate.admin` includes all of the above (default: op). With `selection.permission-per-ultimate: true`,
+picking needs `etranultimate.use.<ultimate>` (or `.use.*`). Aliases: `/bwu`, `/ultimates`, `/bwultimate`.
 
 ## Version compatibility
 
@@ -123,7 +123,7 @@ The plugin makes **no use of server internals (NMS)**. Everything version-specif
 ## Project layout
 
 ```
-src/main/kotlin/dev/bw1058/ultimate/
+src/main/kotlin/dev/etran/ultimate/
   UltimatePlugin.kt        entry point, tick loop, reload
   compat/                  McVersion, Sounds, Particles, Materials, Effects, PlayerCompat (everything version-specific)
   config/                  Opt/Specs (option declarations), ConfigFile, YamlWriter, YamlEditor, ConfigManager, settings

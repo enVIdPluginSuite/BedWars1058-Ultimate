@@ -8,8 +8,8 @@ import com.andrei1058.bedwars.api.events.player.PlayerLeaveArenaEvent
 import com.andrei1058.bedwars.api.events.player.PlayerReSpawnEvent
 import com.andrei1058.bedwars.api.events.server.ArenaDisableEvent
 import com.andrei1058.bedwars.api.events.server.ArenaRestartEvent
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.core.UltimateItems
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.core.UltimateItems
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
 import org.bukkit.event.EventPriority

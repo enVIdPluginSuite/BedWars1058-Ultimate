@@ -1,8 +1,8 @@
 package dev.etran.ultimate
 
-import dev.bw1058.ultimate.compat.AliasGroups
-import dev.bw1058.ultimate.compat.McVersion
-import dev.bw1058.ultimate.compat.Sounds
+import dev.etran.ultimate.compat.AliasGroups
+import dev.etran.ultimate.compat.McVersion
+import dev.etran.ultimate.compat.Sounds
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse

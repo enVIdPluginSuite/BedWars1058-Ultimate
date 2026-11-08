@@ -1,9 +1,9 @@
 package dev.etran.ultimate.gui
 
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.Sounds
-import dev.bw1058.ultimate.core.Text
-import dev.bw1058.ultimate.ultimate.UltimateManager
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.Sounds
+import dev.etran.ultimate.core.Text
+import dev.etran.ultimate.ultimate.UltimateManager
 import org.bukkit.entity.Player
 import java.util.UUID
 

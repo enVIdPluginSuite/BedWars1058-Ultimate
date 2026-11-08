@@ -1,6 +1,6 @@
 name: BedWars1058-Ultimate
 version: ${version}
-main: dev.bw1058.ultimate.UltimatePlugin
+main: dev.etran.ultimate.UltimatePlugin
 api-version: '1.13'
 description: Hypixel-style Ultimate mode for BedWars1058, fully configurable in YAML and in-game.
 authors: [thelittlebotengineer]
@@ -13,26 +13,26 @@ commands:
     aliases: [bwu, ultimates]
 
 permissions:
-  bw1058ultimate.use:
+  etranultimate.use:
     description: Pick an ultimate and open the menu.
     default: true
-  bw1058ultimate.use.*:
+  etranultimate.use.*:
     description: Use every ultimate (only matters when selection.permission-per-ultimate is on).
     default: true
-  bw1058ultimate.reload:
+  etranultimate.reload:
     description: Reload configuration and refresh players.
     default: op
-  bw1058ultimate.config:
+  etranultimate.config:
     description: Edit configuration (in-game editor and /bwu config).
     default: op
-  bw1058ultimate.give:
+  etranultimate.give:
     description: Force or remove ultimates on other players.
     default: op
-  bw1058ultimate.admin:
+  etranultimate.admin:
     description: Everything above plus diagnostics.
     default: op
     children:
-      bw1058ultimate.use: true
-      bw1058ultimate.reload: true
-      bw1058ultimate.config: true
-      bw1058ultimate.give: true
+      etranultimate.use: true
+      etranultimate.reload: true
+      etranultimate.config: true
+      etranultimate.give: true

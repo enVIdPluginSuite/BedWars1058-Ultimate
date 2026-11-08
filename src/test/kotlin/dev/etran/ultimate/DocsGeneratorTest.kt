@@ -1,7 +1,7 @@
 package dev.etran.ultimate
 
-import dev.bw1058.ultimate.config.OptType
-import dev.bw1058.ultimate.config.OptValues
+import dev.etran.ultimate.config.OptType
+import dev.etran.ultimate.config.OptValues
 import java.io.File
 import kotlin.test.Test
 import kotlin.test.assertTrue

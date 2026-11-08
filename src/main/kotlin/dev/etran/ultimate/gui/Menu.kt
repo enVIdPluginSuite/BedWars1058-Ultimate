@@ -1,6 +1,6 @@
 package dev.etran.ultimate.gui
 
-import dev.bw1058.ultimate.UltimatePlugin
+import dev.etran.ultimate.UltimatePlugin
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler

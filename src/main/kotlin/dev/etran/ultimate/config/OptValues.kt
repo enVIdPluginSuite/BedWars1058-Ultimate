@@ -1,9 +1,9 @@
 package dev.etran.ultimate.config
 
-import dev.bw1058.ultimate.compat.Effects
-import dev.bw1058.ultimate.compat.Materials
-import dev.bw1058.ultimate.compat.Particles
-import dev.bw1058.ultimate.compat.Sounds
+import dev.etran.ultimate.compat.Effects
+import dev.etran.ultimate.compat.Materials
+import dev.etran.ultimate.compat.Particles
+import dev.etran.ultimate.compat.Sounds
 import java.math.BigDecimal
 
 /** Parsing, validation and display of option values. Shared by the file loader, the command and the GUI editor. */

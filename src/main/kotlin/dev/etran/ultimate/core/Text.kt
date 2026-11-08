@@ -1,6 +1,6 @@
 package dev.etran.ultimate.core
 
-import dev.bw1058.ultimate.compat.McVersion
+import dev.etran.ultimate.compat.McVersion
 import org.bukkit.ChatColor
 import org.bukkit.command.CommandSender
 

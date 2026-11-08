@@ -2,14 +2,14 @@ package dev.etran.ultimate.ultimate
 
 import com.andrei1058.bedwars.api.arena.IArena
 import com.andrei1058.bedwars.api.arena.team.ITeam
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.Blocks
-import dev.bw1058.ultimate.compat.Materials
-import dev.bw1058.ultimate.compat.PlayerCompat
-import dev.bw1058.ultimate.compat.Sounds
-import dev.bw1058.ultimate.config.ItemOpts
-import dev.bw1058.ultimate.core.Text
-import dev.bw1058.ultimate.core.UltimateItems
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.Blocks
+import dev.etran.ultimate.compat.Materials
+import dev.etran.ultimate.compat.PlayerCompat
+import dev.etran.ultimate.compat.Sounds
+import dev.etran.ultimate.config.ItemOpts
+import dev.etran.ultimate.core.Text
+import dev.etran.ultimate.core.UltimateItems
 import org.bukkit.Material
 import org.bukkit.block.Block
 import org.bukkit.block.BlockFace

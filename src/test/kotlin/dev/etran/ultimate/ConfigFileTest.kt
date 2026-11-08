@@ -1,9 +1,9 @@
 package dev.etran.ultimate
 
-import dev.bw1058.ultimate.config.ConfigFile
-import dev.bw1058.ultimate.config.OptType
-import dev.bw1058.ultimate.config.OptValues
-import dev.bw1058.ultimate.config.Specs
+import dev.etran.ultimate.config.ConfigFile
+import dev.etran.ultimate.config.OptType
+import dev.etran.ultimate.config.OptValues
+import dev.etran.ultimate.config.Specs
 import java.io.File
 import java.nio.charset.StandardCharsets
 import java.nio.file.Files

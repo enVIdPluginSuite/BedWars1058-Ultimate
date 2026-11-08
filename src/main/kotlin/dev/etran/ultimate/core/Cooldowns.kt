@@ -1,6 +1,6 @@
 package dev.etran.ultimate.core
 
-import dev.bw1058.ultimate.UltimatePlugin
+import dev.etran.ultimate.UltimatePlugin
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import java.util.UUID

@@ -26,7 +26,7 @@ _Picking and switching ultimates_
 | `selection.switch-cooldown-seconds` | whole number | `20` | Seconds a player must wait between picks. 0 disables the cooldown. Range 0 to 3600. |
 | `selection.first-pick-free` | true/false | `false` | If true, a player's very first pick doesn't start the switch cooldown.  |
 | `selection.allow-while-respawning` | true/false | `true` | Allow picking/switching while waiting to respawn.  |
-| `selection.permission-per-ultimate` | true/false | `false` | Require the permission bw1058ultimate.use.<id> (for example bw1058ultimate.use.healer) to pick each ultimate.  |
+| `selection.permission-per-ultimate` | true/false | `false` | Require the permission etranultimate.use.<id> (for example etranultimate.use.healer) to pick each ultimate.  |
 | `selection.select-sound` | sound | `NOTE_PLING` | Sound when an ultimate is picked. Blank disables it. Any era's name works (NOTE_PLING, BLOCK_NOTE_BLOCK_PLING, ...). Format: NAME or NAME:volume:pitch.  |
 | `selection.denied-sound` | sound | `VILLAGER_NO` | Sound when a pick is refused. Blank disables it. Any era's name works (NOTE_PLING, BLOCK_NOTE_BLOCK_PLING, ...). Format: NAME or NAME:volume:pitch.  |
 

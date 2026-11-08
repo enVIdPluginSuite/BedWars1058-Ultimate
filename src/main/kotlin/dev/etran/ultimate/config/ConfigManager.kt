@@ -1,7 +1,7 @@
 package dev.etran.ultimate.config
 
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.ultimate.Ultimate
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.ultimate.Ultimate
 
 class ConfigReport(val errors: List<String>, val warnings: List<String>, val files: Int) {
     val ok: Boolean get() = errors.isEmpty()

@@ -1,7 +1,7 @@
 package dev.etran.ultimate.core
 
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.PlayerCompat
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.PlayerCompat
 import org.bukkit.entity.Player
 import org.bukkit.entity.ThrownPotion
 import org.bukkit.metadata.FixedMetadataValue
@@ -13,7 +13,7 @@ import org.bukkit.metadata.FixedMetadataValue
  */
 object PotionTools {
 
-    private const val META = "bw1058ultimate-potion"
+    private const val META = "etranultimate-potion"
 
     /** The `<id>:<kind>` tag of the ultimate item in either hand, if any. */
     fun heldTag(player: Player): String? =

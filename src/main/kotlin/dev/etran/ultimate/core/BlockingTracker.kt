@@ -1,7 +1,7 @@
 package dev.etran.ultimate.core
 
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.PlayerCompat
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.PlayerCompat
 import org.bukkit.Material
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler

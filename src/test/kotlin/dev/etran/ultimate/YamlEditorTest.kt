@@ -1,8 +1,8 @@
 package dev.etran.ultimate
 
-import dev.bw1058.ultimate.config.YamlEditor
-import dev.bw1058.ultimate.config.YamlWriter
-import dev.bw1058.ultimate.config.OptType
+import dev.etran.ultimate.config.YamlEditor
+import dev.etran.ultimate.config.YamlWriter
+import dev.etran.ultimate.config.OptType
 import org.bukkit.configuration.file.YamlConfiguration
 import kotlin.test.Test
 import kotlin.test.assertEquals

@@ -1,6 +1,6 @@
 package dev.etran.ultimate.config
 
-import dev.bw1058.ultimate.core.ItemFactory
+import dev.etran.ultimate.core.ItemFactory
 import org.bukkit.inventory.ItemStack
 
 /**

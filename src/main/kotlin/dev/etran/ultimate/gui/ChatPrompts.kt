@@ -1,10 +1,10 @@
 package dev.etran.ultimate.gui
 
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.config.ConfigFile
-import dev.bw1058.ultimate.config.Opt
-import dev.bw1058.ultimate.config.OptValues
-import dev.bw1058.ultimate.core.Text
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.config.ConfigFile
+import dev.etran.ultimate.config.Opt
+import dev.etran.ultimate.config.OptValues
+import dev.etran.ultimate.core.Text
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
@@ -32,7 +32,7 @@ class ChatPrompts(private val plugin: UltimatePlugin) : Listener {
         sessions[player.uniqueId] = Session(file, opt, done, null)
         val ph = arrayOf("path" to opt.path, "value" to OptValues.display(current))
         plugin.reply(player, plugin.configs.messages.promptValue.get(), *ph)
-        if (opt.type == dev.bw1058.ultimate.config.OptType.CHOICE) {
+        if (opt.type == dev.etran.ultimate.config.OptType.CHOICE) {
             plugin.reply(player, "&7Allowed: &f" + opt.choices.joinToString(", "))
         }
     }

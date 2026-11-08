@@ -1,6 +1,6 @@
 package dev.etran.ultimate.core
 
-import dev.bw1058.ultimate.UltimatePlugin
+import dev.etran.ultimate.UltimatePlugin
 import org.bukkit.Material
 import org.bukkit.entity.Player
 import org.bukkit.inventory.ItemStack

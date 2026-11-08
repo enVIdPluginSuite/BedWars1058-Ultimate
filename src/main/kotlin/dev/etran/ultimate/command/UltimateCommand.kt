@@ -1,15 +1,15 @@
 package dev.etran.ultimate.command
 
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.McVersion
-import dev.bw1058.ultimate.config.ConfigFile
-import dev.bw1058.ultimate.config.Opt
-import dev.bw1058.ultimate.config.OptType
-import dev.bw1058.ultimate.config.OptValues
-import dev.bw1058.ultimate.core.Text
-import dev.bw1058.ultimate.gui.ConfigBrowserMenu
-import dev.bw1058.ultimate.gui.ConfigRootMenu
-import dev.bw1058.ultimate.gui.UltimateMenu
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.McVersion
+import dev.etran.ultimate.config.ConfigFile
+import dev.etran.ultimate.config.Opt
+import dev.etran.ultimate.config.OptType
+import dev.etran.ultimate.config.OptValues
+import dev.etran.ultimate.core.Text
+import dev.etran.ultimate.gui.ConfigBrowserMenu
+import dev.etran.ultimate.gui.ConfigRootMenu
+import dev.etran.ultimate.gui.UltimateMenu
 import org.bukkit.Bukkit
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
@@ -23,11 +23,11 @@ class UltimateCommand(private val plugin: UltimatePlugin) : CommandExecutor, Tab
     private val msgs get() = plugin.configs.messages
 
     private companion object {
-        const val ADMIN = "bw1058ultimate.admin"
-        const val USE = "bw1058ultimate.use"
-        const val RELOAD = "bw1058ultimate.reload"
-        const val CONFIG = "bw1058ultimate.config"
-        const val GIVE = "bw1058ultimate.give"
+        const val ADMIN = "etranultimate.admin"
+        const val USE = "etranultimate.use"
+        const val RELOAD = "etranultimate.reload"
+        const val CONFIG = "etranultimate.config"
+        const val GIVE = "etranultimate.give"
         val SUBCOMMANDS = listOf("help", "list", "info", "select", "menu", "reload", "config", "enable", "disable", "give", "clear", "refresh", "status")
     }
 
@@ -89,7 +89,7 @@ class UltimateCommand(private val plugin: UltimatePlugin) : CommandExecutor, Tab
         for (l in lines) Text.send(sender, l)
     }
 
-    private fun resolve(sender: CommandSender, id: String?): dev.bw1058.ultimate.ultimate.Ultimate? {
+    private fun resolve(sender: CommandSender, id: String?): dev.etran.ultimate.ultimate.Ultimate? {
         val u = id?.let { plugin.manager.get(it) }
         if (u == null) {
             plugin.reply(

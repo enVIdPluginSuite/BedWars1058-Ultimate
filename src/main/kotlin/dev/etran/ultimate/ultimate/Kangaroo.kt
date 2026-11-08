@@ -3,12 +3,12 @@ package dev.etran.ultimate.ultimate
 import com.andrei1058.bedwars.api.arena.IArena
 import com.andrei1058.bedwars.api.events.player.PlayerBedBreakEvent
 import com.andrei1058.bedwars.api.events.player.PlayerReSpawnEvent
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.Effects
-import dev.bw1058.ultimate.compat.Materials
-import dev.bw1058.ultimate.compat.Particles
-import dev.bw1058.ultimate.compat.Sounds
-import dev.bw1058.ultimate.core.Text
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.Effects
+import dev.etran.ultimate.compat.Materials
+import dev.etran.ultimate.compat.Particles
+import dev.etran.ultimate.compat.Sounds
+import dev.etran.ultimate.core.Text
 import org.bukkit.Bukkit
 import org.bukkit.GameMode
 import org.bukkit.entity.Player
@@ -174,7 +174,7 @@ class Kangaroo(plugin: UltimatePlugin) : Ultimate(
         for (slot in 0 until 36) {
             val item = inventory.getItem(slot) ?: continue
             if (item.type == org.bukkit.Material.AIR) continue
-            if (dev.bw1058.ultimate.core.UltimateItems.isProtected(item)) continue
+            if (dev.etran.ultimate.core.UltimateItems.isProtected(item)) continue
             if (isResource(item)) candidates.add(slot)
         }
         val keepCount = Math.floor(candidates.size * keepFraction.get()).toInt()

@@ -3,10 +3,10 @@ package dev.etran.ultimate.ultimate
 import com.andrei1058.bedwars.api.arena.GameState
 import com.andrei1058.bedwars.api.arena.IArena
 import com.andrei1058.bedwars.api.arena.team.ITeam
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.Sounds
-import dev.bw1058.ultimate.core.Text
-import dev.bw1058.ultimate.core.UltimateItems
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.Sounds
+import dev.etran.ultimate.core.Text
+import dev.etran.ultimate.core.UltimateItems
 import org.bukkit.entity.Player
 import java.util.UUID
 import java.util.concurrent.ThreadLocalRandom
@@ -75,8 +75,8 @@ class UltimateManager(private val plugin: UltimatePlugin) {
         if (!force) {
             if (arena == null) return deny(SelectResult.NOT_IN_GAME, msgs.notInGame.get())
             if (!plugin.arenas.qualifies(arena)) return deny(SelectResult.NOT_ULTIMATE_ARENA, msgs.notUltimateArena.get())
-            if (general.permissionPerUltimate.get() && !player.hasPermission("bw1058ultimate.use.${ultimate.id}") &&
-                !player.hasPermission("bw1058ultimate.use.*")
+            if (general.permissionPerUltimate.get() && !player.hasPermission("etranultimate.use.${ultimate.id}") &&
+                !player.hasPermission("etranultimate.use.*")
             ) return deny(SelectResult.NO_PERMISSION, msgs.noUltimatePermission.get())
             if (selected(player) === ultimate) return deny(SelectResult.ALREADY, msgs.alreadySelected.get())
             if (hasSelection(player) && !general.allowSwitching.get()) return deny(SelectResult.SWITCHING_DISABLED, msgs.switchingDisabled.get())

@@ -1,12 +1,12 @@
 package dev.etran.ultimate
 
-import dev.bw1058.ultimate.compat.AliasGroups
-import dev.bw1058.ultimate.compat.Effects
-import dev.bw1058.ultimate.compat.McVersion
-import dev.bw1058.ultimate.compat.Materials
-import dev.bw1058.ultimate.compat.Particles
-import dev.bw1058.ultimate.compat.Sounds
-import dev.bw1058.ultimate.config.OptType
+import dev.etran.ultimate.compat.AliasGroups
+import dev.etran.ultimate.compat.Effects
+import dev.etran.ultimate.compat.McVersion
+import dev.etran.ultimate.compat.Materials
+import dev.etran.ultimate.compat.Particles
+import dev.etran.ultimate.compat.Sounds
+import dev.etran.ultimate.config.OptType
 import org.junit.jupiter.api.Assumptions.assumeTrue
 import java.io.File
 import java.util.TreeMap
@@ -34,7 +34,7 @@ class ApiCompatTest {
 
     private val typeInDescriptor = Regex("L(org/bukkit/[^;]+);")
 
-    private fun ours() = classDirs.flatMap { ClassFiles.parseDirectory(it) }.filter { it.model.name.startsWith("dev/bw1058/ultimate/") }
+    private fun ours() = classDirs.flatMap { ClassFiles.parseDirectory(it) }.filter { it.model.name.startsWith("dev/etran/ultimate/") }
 
     private fun modern(version: String): Boolean = McVersion.parse(version)!!.atLeast(13)
 
@@ -63,7 +63,7 @@ class ApiCompatTest {
     private fun checkBinary(ours: List<ParsedClass>, api: ApiIndex): Set<String> {
         val out = TreeSet<String>()
         for (c in ours) {
-            val where = c.model.name.removePrefix("dev/bw1058/ultimate/")
+            val where = c.model.name.removePrefix("dev/etran/ultimate/")
             for (ref in c.refs) {
                 if (!ref.owner.startsWith("org/bukkit/")) continue
                 val owner = api.classes[ref.owner]
@@ -96,7 +96,7 @@ class ApiCompatTest {
     @Test fun checkerCatchesTheOriginalPluginsCrashPatterns() {
         assumeTrue(jars.isNotEmpty(), "run through `gradle compatTest`")
         val fixtureDirs = (System.getProperty("compat.testClasses") ?: "").split(File.pathSeparator).filter { it.isNotBlank() }.map { File(it) }
-        val fixture = fixtureDirs.flatMap { ClassFiles.parseDirectory(it) }.filter { it.model.name.startsWith("dev/bw1058/ultimate/fixture/") }
+        val fixture = fixtureDirs.flatMap { ClassFiles.parseDirectory(it) }.filter { it.model.name.startsWith("dev/etran/ultimate/fixture/") }
         assertTrue(fixture.isNotEmpty(), "negative-control fixture not found")
 
         val onOld = checkBinary(fixture, ApiIndex(ClassFiles.indexJar(jars.getValue("1.8.8"))))

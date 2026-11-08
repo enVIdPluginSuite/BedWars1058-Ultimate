@@ -1,15 +1,15 @@
 package dev.etran.ultimate.ultimate
 
 import com.andrei1058.bedwars.api.arena.IArena
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.Effects
-import dev.bw1058.ultimate.compat.Particles
-import dev.bw1058.ultimate.compat.Sounds
-import dev.bw1058.ultimate.config.ItemOpts
-import dev.bw1058.ultimate.core.ItemFactory
-import dev.bw1058.ultimate.core.PotionTools
-import dev.bw1058.ultimate.core.Text
-import dev.bw1058.ultimate.core.UltimateItems
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.Effects
+import dev.etran.ultimate.compat.Particles
+import dev.etran.ultimate.compat.Sounds
+import dev.etran.ultimate.config.ItemOpts
+import dev.etran.ultimate.core.ItemFactory
+import dev.etran.ultimate.core.PotionTools
+import dev.etran.ultimate.core.Text
+import dev.etran.ultimate.core.UltimateItems
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import org.bukkit.entity.Snowball

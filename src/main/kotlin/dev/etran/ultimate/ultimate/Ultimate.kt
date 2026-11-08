@@ -2,12 +2,12 @@ package dev.etran.ultimate.ultimate
 
 import com.andrei1058.bedwars.api.arena.GameState
 import com.andrei1058.bedwars.api.arena.IArena
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.config.ConfigFile
-import dev.bw1058.ultimate.config.ItemOpts
-import dev.bw1058.ultimate.config.Opt
-import dev.bw1058.ultimate.config.Specs
-import dev.bw1058.ultimate.core.Text
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.config.ConfigFile
+import dev.etran.ultimate.config.ItemOpts
+import dev.etran.ultimate.config.Opt
+import dev.etran.ultimate.config.Specs
+import dev.etran.ultimate.core.Text
 import org.bukkit.entity.Player
 import org.bukkit.event.Listener
 import org.bukkit.inventory.ItemStack
@@ -62,7 +62,7 @@ abstract class Ultimate(
     fun deactivate(player: Player) {
         onDeactivate(player)
         plugin.cooldowns.clearAbilities(player)
-        dev.bw1058.ultimate.core.UltimateItems.clear(player)
+        dev.etran.ultimate.core.UltimateItems.clear(player)
     }
 
     /**

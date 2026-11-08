@@ -2,8 +2,8 @@ package dev.etran.ultimate.core
 
 import com.andrei1058.bedwars.api.arena.GameState
 import com.andrei1058.bedwars.api.arena.IArena
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.Sounds
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.Sounds
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import org.bukkit.scheduler.BukkitTask

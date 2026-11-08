@@ -1,14 +1,14 @@
 package dev.etran.ultimate.gui
 
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.Sounds
-import dev.bw1058.ultimate.config.ConfigFile
-import dev.bw1058.ultimate.config.Opt
-import dev.bw1058.ultimate.config.OptType
-import dev.bw1058.ultimate.config.OptValues
-import dev.bw1058.ultimate.config.YamlWriter
-import dev.bw1058.ultimate.core.ItemFactory
-import dev.bw1058.ultimate.core.Text
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.Sounds
+import dev.etran.ultimate.config.ConfigFile
+import dev.etran.ultimate.config.Opt
+import dev.etran.ultimate.config.OptType
+import dev.etran.ultimate.config.OptValues
+import dev.etran.ultimate.config.YamlWriter
+import dev.etran.ultimate.core.ItemFactory
+import dev.etran.ultimate.core.Text
 import org.bukkit.Material
 import org.bukkit.entity.Player
 import org.bukkit.event.inventory.ClickType
@@ -196,7 +196,7 @@ class ConfigBrowserMenu(
             OptType.STRING -> "NAME_TAG"
             OptType.TEXT -> "SIGN"
             OptType.SOUND -> "NOTE_BLOCK"
-            OptType.MATERIAL -> if (dev.bw1058.ultimate.compat.Materials.isValid(value.toString())) value.toString() else "BARRIER"
+            OptType.MATERIAL -> if (dev.etran.ultimate.compat.Materials.isValid(value.toString())) value.toString() else "BARRIER"
             OptType.PARTICLE -> "BLAZE_POWDER"
             OptType.EFFECT -> "BREWING_STAND"
             OptType.CHOICE -> "COMPARATOR"

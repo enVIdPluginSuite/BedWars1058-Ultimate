@@ -1,6 +1,6 @@
 package dev.etran.ultimate
 
-import dev.bw1058.ultimate.core.Cooldowns
+import dev.etran.ultimate.core.Cooldowns
 import org.bukkit.entity.Player
 import java.lang.reflect.Proxy
 import java.util.UUID

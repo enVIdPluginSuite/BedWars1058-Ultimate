@@ -1,22 +1,22 @@
 package dev.etran.ultimate
 
-import dev.bw1058.ultimate.config.GeneralSettings
-import dev.bw1058.ultimate.config.MessageSettings
-import dev.bw1058.ultimate.config.Specs
-import dev.bw1058.ultimate.ultimate.Builder
-import dev.bw1058.ultimate.ultimate.Demolition
-import dev.bw1058.ultimate.ultimate.Frozo
-import dev.bw1058.ultimate.ultimate.Gatherer
-import dev.bw1058.ultimate.ultimate.Healer
-import dev.bw1058.ultimate.ultimate.Kangaroo
-import dev.bw1058.ultimate.ultimate.Swordsman
-import dev.bw1058.ultimate.ultimate.Ultimate
+import dev.etran.ultimate.config.GeneralSettings
+import dev.etran.ultimate.config.MessageSettings
+import dev.etran.ultimate.config.Specs
+import dev.etran.ultimate.ultimate.Builder
+import dev.etran.ultimate.ultimate.Demolition
+import dev.etran.ultimate.ultimate.Frozo
+import dev.etran.ultimate.ultimate.Gatherer
+import dev.etran.ultimate.ultimate.Healer
+import dev.etran.ultimate.ultimate.Kangaroo
+import dev.etran.ultimate.ultimate.Swordsman
+import dev.etran.ultimate.ultimate.Ultimate
 
 object TestSupport {
 
     init {
         // The unit-test classpath is the Spigot 1.8.8 API, and there is no server to ask.
-        dev.bw1058.ultimate.compat.McVersion.testOverride = dev.bw1058.ultimate.compat.McVersion(1, 8, 8)
+        dev.etran.ultimate.compat.McVersion.testOverride = dev.etran.ultimate.compat.McVersion(1, 8, 8)
     }
 
     /**

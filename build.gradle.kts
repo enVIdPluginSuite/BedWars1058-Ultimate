@@ -25,7 +25,7 @@ dependencies {
     compileOnly("com.google.code.gson:gson:2.2.4")
     compileOnly("org.yaml:snakeyaml:1.15")
     compileOnly("commons-lang:commons-lang:2.6")
-    compileOnly(files("libs/bedwars-plugin-23.3.jar"))
+    compileOnly(files("libs/bedwars-api-24.9.jar"))
     implementation(kotlin("stdlib"))
 
     testImplementation(kotlin("test"))
@@ -94,9 +94,9 @@ tasks.shadowJar {
 
     // Relocate the Kotlin runtime so this plugin can't clash with any other Kotlin-based plugin on the server
     // (each plugin ships its own stdlib copy; unrelocated copies of different versions break each other).
-    relocate("kotlin", "dev.bw1058.ultimate.libs.kotlin")
-    relocate("org.jetbrains", "dev.bw1058.ultimate.libs.jetbrains")
-    relocate("org.intellij", "dev.bw1058.ultimate.libs.intellij")
+    relocate("kotlin", "dev.etran.ultimate.libs.kotlin")
+    relocate("org.jetbrains", "dev.etran.ultimate.libs.jetbrains")
+    relocate("org.intellij", "dev.etran.ultimate.libs.intellij")
 
     exclude("META-INF/*.kotlin_module", "META-INF/maven/**", "META-INF/versions/**", "META-INF/proguard/**", "DebugProbesKt.bin", "**/module-info.class")
 }

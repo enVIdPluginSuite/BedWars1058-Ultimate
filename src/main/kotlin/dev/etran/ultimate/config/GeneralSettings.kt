@@ -55,7 +55,7 @@ class GeneralSettings {
     )
     val permissionPerUltimate = specs.bool(
         "selection.permission-per-ultimate", false,
-        "Require the permission bw1058ultimate.use.<id> (for example bw1058ultimate.use.healer) to pick each ultimate."
+        "Require the permission etranultimate.use.<id> (for example etranultimate.use.healer) to pick each ultimate."
     )
     val selectSound = specs.sound("selection.select-sound", "NOTE_PLING", "Sound when an ultimate is picked.")
     val deniedSound = specs.sound("selection.denied-sound", "VILLAGER_NO", "Sound when a pick is refused.")

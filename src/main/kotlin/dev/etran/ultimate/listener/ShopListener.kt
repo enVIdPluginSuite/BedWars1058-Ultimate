@@ -2,11 +2,11 @@ package dev.etran.ultimate.listener
 
 import com.andrei1058.bedwars.api.language.Language
 import com.andrei1058.bedwars.api.language.Messages
-import dev.bw1058.ultimate.UltimatePlugin
-import dev.bw1058.ultimate.compat.PlayerCompat
-import dev.bw1058.ultimate.core.UltimateItems
-import dev.bw1058.ultimate.gui.Menu
-import dev.bw1058.ultimate.gui.UltimateMenu
+import dev.etran.ultimate.UltimatePlugin
+import dev.etran.ultimate.compat.PlayerCompat
+import dev.etran.ultimate.core.UltimateItems
+import dev.etran.ultimate.gui.Menu
+import dev.etran.ultimate.gui.UltimateMenu
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
