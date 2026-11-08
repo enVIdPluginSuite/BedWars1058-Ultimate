@@ -1,0 +1,10 @@
+.gradle/
+build/
+.idea/
+*.iml
+out/
+.kotlin/
+*.log
+.kotlin
+gradlew
+gradlew.bat
